@@ -10,3 +10,9 @@
   bd = branch -d
   amend = commit --amend
   tree = log --all --graph --decorate --oneline
+
+[credential]
+  helper = /usr/local/share/gcm-core/git-credential-manager
+
+[credential "https://dev.azure.com"]
+  useHttpPath = true
