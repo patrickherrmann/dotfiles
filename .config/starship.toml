@@ -1,0 +1,17 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+[cmd_duration]
+disabled = true
+
+[character]
+success_symbol = '[❯](bold white)'
+vimcmd_symbol = '[❯](bold blue)'
+
+[nodejs]
+disabled = true
+
+[line_break]
+disabled = true

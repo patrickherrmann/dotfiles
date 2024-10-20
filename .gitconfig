@@ -1,0 +1,12 @@
+[user]
+  name = Patrick Herrmann
+  email = patrickwherrmann@gmail.com
+
+[alias]
+  a = add .
+  cm = commit -m
+  co = checkout
+  cob = checkout -b
+  bd = branch -d
+  amend = commit --amend
+  tree = log --all --graph --decorate --oneline
