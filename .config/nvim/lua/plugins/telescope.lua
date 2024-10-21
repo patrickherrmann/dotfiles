@@ -12,14 +12,17 @@ return {
       telescope.setup({
         pickers = {
           lsp_references = { show_line = false },
+          find_files = {
+            -- Include hidden files except .git, honor .gitignore
+            find_command = { "rg", "--files", "--iglob", "!.git", "--hidden" },
+          },
         },
       })
 
       telescope.load_extension("fzf")
       telescope.load_extension("ui-select")
 
-      builtin = require("telescope.builtin")
-
+      local builtin = require("telescope.builtin")
       vim.keymap.set("n", "<leader>p", builtin.find_files, { desc = "Find files" })
       vim.keymap.set("n", "<leader>/", builtin.live_grep, { desc = "Live grep" })
       vim.keymap.set("n", "<leader>;", builtin.buffers, { desc = "Find buffers" })
