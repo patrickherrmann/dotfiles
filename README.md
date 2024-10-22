@@ -1,13 +1,8 @@
-Some prerequisites:
+Setup:
 ```zsh
-brew install stow tmux neovim fzf fd eza bat git-delta starship zsh-syntax-highlighting prettierd stylua node ripgrep
-brew install --cask --no-quarantine alacritty font-inconsolata-nerd-font
-```
-
-Symlink these dotfiles:
-```zsh
-cd ~
+cd ~ # Must clone into home; stow symlinks to the parent directory
 git clone https://github.com/patrickherrmann/dotfiles.git
 cd dotfiles
+brew bundle # Install system packages (including stow used on the next line)
 stow .
 ```
