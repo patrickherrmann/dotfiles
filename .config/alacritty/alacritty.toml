@@ -7,7 +7,7 @@ decorations = "None"
 dynamic_title = false
 
 [font]
-size = 14
+size = 15
 normal = { family = "Inconsolata Nerd Font Mono", style = "Regular" }
 
 [colors.primary]
