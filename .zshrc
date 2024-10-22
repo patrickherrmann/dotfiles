@@ -18,6 +18,7 @@ setopt NO_MENUCOMPLETE
 
 alias ls='eza'
 alias ll='eza --long --all --no-user'
+alias cat='bat'
 
 alias vim=nvim
 export EDITOR='nvim'

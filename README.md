@@ -1,6 +1,6 @@
 Some prerequisites:
 ```zsh
-brew install stow tmux neovim fzf fd eza starship zsh-syntax-highlighting prettierd stylua node ripgrep
+brew install stow tmux neovim fzf fd eza bat starship zsh-syntax-highlighting prettierd stylua node ripgrep
 brew install --cask --no-quarantine alacritty font-inconsolata-nerd-font
 ```
 
