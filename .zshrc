@@ -58,4 +58,5 @@ export FZF_CTRL_T_OPTS="
   --preview 'bat -n --color=always {}'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
