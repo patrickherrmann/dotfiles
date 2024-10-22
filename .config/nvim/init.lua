@@ -37,3 +37,10 @@ vim.keymap.set("n", "<leader>q", ":bd<cr>")
 
 -- Copy buffer path to system clipboard
 vim.keymap.set("n", "<leader>f", ':let @+ = expand(" % ")<cr>')
+
+-- Hints for nonobvious filetypes
+vim.filetype.add({
+  filename = {
+    ["Brewfile"] = "ruby",
+  },
+})
