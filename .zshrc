@@ -16,7 +16,8 @@ compinit
 _comp_options+=(globdots) # Include hidden files
 setopt NO_MENUCOMPLETE
 
-alias ll='ls -al'
+alias ls='eza'
+alias ll='eza --long --all --no-user'
 
 alias vim=nvim
 export EDITOR='nvim'
