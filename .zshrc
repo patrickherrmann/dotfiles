@@ -55,7 +55,7 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 # Preview file fuzzy finding with bat
 export FZF_CTRL_T_OPTS="
   --walker-skip .git,node_modules,target
-  --preview 'bat -n --color=always {}'
+  --preview 'fzf_preview {}'
   --bind 'ctrl-/:change-preview-window(down|hidden|)'"
 
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
