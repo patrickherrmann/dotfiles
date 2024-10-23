@@ -1,5 +1,4 @@
 return {
-  "tpope/vim-commentary",
   "tpope/vim-surround",
   "tpope/vim-repeat",
   "tpope/vim-eunuch",
@@ -33,4 +32,10 @@ return {
   "vim-scripts/ReplaceWithRegister",
   { "windwp/nvim-autopairs", opts = {} },
   { "windwp/nvim-ts-autotag", opts = {} },
+  {
+    "folke/ts-comments.nvim",
+    opts = {},
+    event = "VeryLazy",
+    enabled = vim.fn.has("nvim-0.10.0") == 1,
+  },
 }
