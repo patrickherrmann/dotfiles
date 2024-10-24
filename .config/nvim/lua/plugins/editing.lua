@@ -67,4 +67,5 @@ return {
     dependencies = { "nvim-tree/nvim-web-devicons" },
     vim.keymap.set("n", "-", "<cmd>Oil<cr>", { desc = "Open parent directory" }),
   },
+  "tpope/vim-eunuch",
 }
