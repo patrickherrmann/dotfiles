@@ -1,14 +1,10 @@
 return {
   {
-    "echasnovski/mini.surround",
-    version = false,
-    opts = {
-      mappings = {
-        add = "ys",
-        delete = "ds",
-        replace = "cs",
-      },
-    },
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
+    opts = {},
+    dependencies = { "nvim-treesitter/nvim-treesitter-textobjects" },
   },
   { "echasnovski/mini.operators", version = false, opts = {} },
   {
@@ -64,5 +60,11 @@ return {
     opts = {},
     event = "VeryLazy",
     enabled = vim.fn.has("nvim-0.10.0") == 1,
+  },
+  {
+    "stevearc/oil.nvim",
+    opts = {},
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    vim.keymap.set("n", "-", "<cmd>Oil<cr>", { desc = "Open parent directory" }),
   },
 }
