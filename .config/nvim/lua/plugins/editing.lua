@@ -1,5 +1,15 @@
 return {
-  { "echasnovski/mini.surround", version = false, opts = {} },
+  {
+    "echasnovski/mini.surround",
+    version = false,
+    opts = {
+      mappings = {
+        add = "ys",
+        delete = "ds",
+        replace = "cs",
+      },
+    },
+  },
   { "echasnovski/mini.operators", version = false, opts = {} },
   {
     "echasnovski/mini.ai",
