@@ -11,5 +11,5 @@ brew "zsh-syntax-highlighting"
 brew "zsh-autosuggestions"
 brew "ripgrep"
 
-cask "alacritty", { no_quarantine: true }
+cask "alacritty", args: { no_quarantine: true }
 cask "font-inconsolata-nerd-font"
